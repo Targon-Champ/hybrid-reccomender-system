@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # 🎬 Hybrid Recommender System using MovieLens 100K
 
 A lightweight and interpretable hybrid recommender system built using the [MovieLens 100K](https://grouplens.org/datasets/movielens/) dataset. This model combines collaborative filtering with content-based metadata (user and item features) to make rating predictions. It's particularly effective in cold-start scenarios and is designed for simplicity, transparency, and fast computation.
@@ -16,13 +16,13 @@ This project implements a baseline **Hybrid Collaborative Filtering** approach u
 
 The model extends the `AlgoBase` class from the [Surprise](http://surpriselib.com/) library and predicts ratings using a **rule-based formula**:
 
-```
+
 
 prediction = global\_mean
 \+ 0.5 × mean(user\_features)
 \+ 0.5 × mean(item\_features)
 
-````
+
 
 ---
 
